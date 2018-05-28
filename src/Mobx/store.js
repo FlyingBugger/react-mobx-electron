@@ -4,10 +4,10 @@ import { message } from 'antd';
 class AppStore {
   @observable tag=0;
   @action changeTag(){
-    this.tag=13;
+    this.tag++;
   }
   @computed get tagAdd(){
-    return this.tag++;
+    return this.tag+=1;
   }
 }
 export default AppStore;

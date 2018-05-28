@@ -8,14 +8,17 @@ import {BrowserRouter as Router,Route,Switch,Redirect} from 'react-router-dom';
 export default ()=>{
 
   return(
-    <div>
+
         <Router basename="/">
+            <div>
+        <Menu/>
           <Switch>
                <Route exact path="/" component={Login}/>
                <Route exact path="/APP"  component={APP} />
                <Redirect to="/" />
            </Switch>
+                   </div>
         </Router>
-        </div>
+
   )
 }
